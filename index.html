@@ -10,169 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <style> 
-    *{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-
-    body{
-        background-color:  #1b1b1b;
-        --primary-color: rgb(219, 80, 80);
-    }
-
-    .lines{
-        background-color: var(--primary-color  );
-        width: 86%;
-        margin: 20px auto;
-    }
-
-    .h-text{
-        font-weight: bold;
-        color: white;
-        font-size: 2rem;
-        font-family: 'Dancing Script', cursive;
-    }
-
-    #info{
-        color: white;
-        padding: 0px 50px;
-        position: absolute;
-        z-index: -1;
-    }
-
-    #my_logo{
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    .logo{
-        display: block;
-        margin: auto;
-        border-radius: 50%;
-        max-width: 100px;
-        margin-bottom: 20px;
-    }
-
-    .myimage{
-        display: none;
-    }
-
-    .side_menu{
-        margin-left:100px ;
-        padding: 10px;
-        text-align: center;
-        color: white;
-        background-color: transparent;
-        border: none;
-    }
-
-    .side_menu:focus{
-        outline: none;
-        color: white;
-        background-color: var(--primary-color);
-    }
-
-    .exp{
-        margin-top: 30px;
-    }
-
-    /* ******************
-    ------Experience--------
-    ******************  */
-    #experience{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        padding: 10px;
-    }
-    .gallary{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .imgs{
-        max-width: 248px;
-        margin: 10px;
-        border: 3px solid var(--primary-color);
-    }
-    /* ***************************For Desktop******************************** */
-
-    @media only screen and (min-width: 600px){
-
-        #full_grid{
-            display: grid;
-            grid-template-columns: 20% auto;
-            padding-top: 54px;
-        }
-        
-        #side_bar{
-            color: white;
-            position: fixed;
-            left: 0;
-            --primary-color: rgb(219, 80, 80);
-            height: 100%;
-            width: 100%;
-            max-width: 20%;
-        }
-        
-        
-
-        #side_menu_list{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-        
-        .side_menu:hover{
-            color: var(--primary-color);
-        }
-        
-        .side_menu{
-            margin-left: 0px;
-            width: 96%;
-            padding-top: 11px;
-            padding-bottom: 11px;
-            
-        }
-
-        .v-line{
-            float: right;
-            position: absolute;
-            border-right: 1px solid var(--primary-color);
-            height: 600px;
-            width: 0px;
-            left: 98%;
-            top: 77px;
-        }
-
-        #skills{
-            display: flex;
-        }
-        
-        .skill_list{
-            margin-right: 50px;
-            margin-left: 20px;
-        }
-        .myimage{
-            display: block;
-            margin: 40px auto;
-            max-width: 260px;
-        }
-
-        #info{
-            position: absolute;
-            right: 0;
-            max-width: 80%;
-            max-height: 705px;
-        }
-    }
-  </style>
-  <title>About Me</title>
+  <link rel="stylesheet" href="myresumecss.css">
+  <title>Himanshu Kawale</title>
 </head>
-
 <body>
 
 <div id="full_grid">
@@ -211,7 +51,7 @@
             <ul>
               <li><span>Team Management</span></li>
               <li><span>Project Management</span></li>
-              <li><span>  </span></li>
+              <li><span>Budgeting</span></li>
               <li><span>Cash Handling</span></li>
             </ul>
           </div>
@@ -226,7 +66,7 @@
           <P>Co-organized FLAMES-2018 (Our Fresher's Party)</P>
           <p>You can watch The video of an "Invitation Card of FLAMES-2018 created by me and the team" below, </p>
           <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/7VeTuMBkgw0?showinfo=0">
+            src="https://www.youtube.com/embed/Hisb-FayE_A?showinfo=0">
           </iframe>
         </div>
         <div class="exp">
@@ -239,6 +79,31 @@
             <img src="arch.jpg" class="imgs">
             <img src="stageview.jpg" class="imgs">
             <img src="mata.jpg" class="imgs">
+          </div>
+        </div>
+
+        <div class="exp row">
+          <h3 style="color: var(--primary-color);">Other</h3>
+          <div class="card bg-dark firstc" style="width: 18rem;">
+            <img src="faug.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Worked on the notice of the Mechanical department with the Cultural Secretary while in 2nd year</p>
+            </div>
+          </div>
+          
+          <div class="card bg-dark" style="width: 18rem;">
+            <img src="rangoli.jpg" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">Jointly handled the Diwali decoration in the Hostel</p>
+            </div>
+          </div>
+          
+          <div class="card bg-dark" style="width: 18rem;">
+            <img src="instagram-1882330_640.png" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">MY instagram Art Page</p>
+              <a href="https://instagram.com/reflectionofemotion" target="blank" class="btn btn-primary">Visit Page</a>
+            </div>
           </div>
         </div>
       </div>
@@ -270,9 +135,7 @@
         hide_cls[i].style.display = "none"
       }
       let cls = String(obj.id);
-      console.log(cls);
       let a = document.getElementsByClassName(cls);
-      console.log(a);
       a[0].style.display = "block";
 
     }
