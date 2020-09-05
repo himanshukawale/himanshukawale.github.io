@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml'
+  xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data'
+  xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <style> 
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color:  #1b1b1b;
+        --primary-color: rgb(219, 80, 80);
+    }
+
+    .lines{
+        background-color: var(--primary-color  );
+        width: 86%;
+        margin: 20px auto;
+    }
+
+    .h-text{
+        font-weight: bold;
+        color: white;
+        font-size: 2rem;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    #info{
+        color: white;
+        padding: 0px 50px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    #my_logo{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .logo{
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .myimage{
+        display: none;
+    }
+
+    .side_menu{
+        margin-left:100px ;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    .side_menu:focus{
+        outline: none;
+        color: white;
+        background-color: var(--primary-color);
+    }
+
+    .exp{
+        margin-top: 30px;
+    }
+
+    /* ******************
+    ------Experience--------
+    ******************  */
+    #experience{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 10px;
+    }
+    .gallary{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imgs{
+        max-width: 248px;
+        margin: 10px;
+        border: 3px solid var(--primary-color);
+    }
+    /* ***************************For Desktop******************************** */
+
+    @media only screen and (min-width: 600px){
+
+        #full_grid{
+            display: grid;
+            grid-template-columns: 20% auto;
+            padding-top: 54px;
+        }
+        
+        #side_bar{
+            color: white;
+            position: fixed;
+            left: 0;
+            --primary-color: rgb(219, 80, 80);
+            height: 100%;
+            width: 100%;
+            max-width: 20%;
+        }
+        
+        
+
+        #side_menu_list{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        
+        .side_menu:hover{
+            color: var(--primary-color);
+        }
+        
+        .side_menu{
+            margin-left: 0px;
+            width: 96%;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            
+        }
+
+        .v-line{
+            float: right;
+            position: absolute;
+            border-right: 1px solid var(--primary-color);
+            height: 600px;
+            width: 0px;
+            left: 98%;
+            top: 77px;
+        }
+
+        #skills{
+            display: flex;
+        }
+        
+        .skill_list{
+            margin-right: 50px;
+            margin-left: 20px;
+        }
+        .myimage{
+            display: block;
+            margin: 40px auto;
+            max-width: 260px;
+        }
+
+        #info{
+            position: absolute;
+            right: 0;
+            max-width: 80%;
+            max-height: 705px;
+        }
+    }
+  </style>
+  <title>About Me</title>
+</head>
+
+<body>
+
+<div id="full_grid">
+  <div id="side_bar">
+    <div id="my_logo">
+      <img src="mypic.jpg" alt="" class="logo">
+      <span class="myname h-text">Himanshu Kawale</span>
+      <hr class="lines">
+    </div>
+
+    <ul id="side_menu_list">
+      <button id="sm-1" class="side_menu" autofocus onclick="show_details(this)">Info</button>
+      <button id="sm-2" class="side_menu" onclick="show_details(this)">Experience</button>
+    </ul>
+    <div class="v-line"></div>
+  </div>
+
+  <div id="info">
+    <div class="sm-1 hide">
+      <div id="myinfo" class="mydetails">
+        <img src="mypic.jpg" alt="" class="myimage">
+        <span class="hello h-text">Hello,</span>
+        <p class="myinfo">I'm <span style="color:var(--primary-color);">Himanshu Kawale</span> from the final year of Mechanical Engineering, standing for the post of <span style="color:var(--primary-color);">Cultural Secretary</span> in the MESA Body. If you think I am a good candidate for the post of Cultural Secretary, please vote for me in the upcoming Election of the MESA Body.</p>
+        <div id="skills">
+          <div class="skill_list">
+            <h6>Art Skills:</h6>
+            <ul>
+              <li><span>Sketching</span></li>
+              <li><span>Painting</span></li>
+              <li><span>Chalk Carving</span></li>
+              <li><span>Crafting</span></li>
+            </ul>
+          </div>
+          <div class="skill_list">
+            <h6>Management Skills:</h6>
+            <ul>
+              <li><span>Team Management</span></li>
+              <li><span>Project Management</span></li>
+              <li><span>  </span></li>
+              <li><span>Cash Handling</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sm-2 hide">
+      <div id="experience" class="mydetails">
+        <div class="exp">
+          <h3 style="color: var(--primary-color);">FLAMES-2018</h3>
+          <P>Co-organized FLAMES-2018 (Our Fresher's Party)</P>
+          <p>You can watch The video of an "Invitation Card of FLAMES-2018 created by me and the team" below, </p>
+          <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/7VeTuMBkgw0?showinfo=0">
+          </iframe>
+        </div>
+        <div class="exp">
+          <h3 style="color: var(--primary-color);">Saraswati Pooja 2020</h3>
+          <P>Co-organized Saraswati Pooja 2020</P>
+          <p>Pictures of "The decoration in Saraswati Pooja 2020 done by me and my friends" are below,</p>
+          <div class="gallary pooja">
+            <img src="fountain.jpg" class="imgs">
+            <img src="gate.jpg" class="imgs">
+            <img src="arch.jpg" class="imgs">
+            <img src="stageview.jpg" class="imgs">
+            <img src="mata.jpg" class="imgs">
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script>
+    let hide_cls = document.getElementsByClassName("hide");
+
+    for (i=1;i<hide_cls.length;i++){
+      hide_cls[i].style.display = "none"
+    };
+
+    function show_details(obj){
+      let hide_cls = document.getElementsByClassName("hide")
+
+      for (i=0;i<hide_cls.length;i++){
+        hide_cls[i].style.display = "none"
+      }
+      let cls = String(obj.id);
+      console.log(cls);
+      let a = document.getElementsByClassName(cls);
+      console.log(a);
+      a[0].style.display = "block";
+
+    }
+
+  </script>
+</body>
+
+</html>
